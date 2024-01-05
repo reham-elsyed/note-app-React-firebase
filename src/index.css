@@ -1,0 +1,51 @@
+body{
+  margin: 0;
+  padding: 0;
+  min-height:100vh;
+  background-image:url("./assets/background.png");
+  background-size: cover;
+background-repeat: none;
+}
+
+.navbar{
+  display:block;
+  position:relative;
+  height: 5rem;
+  background-color: brown;
+  box-shadow: rgb(14, 13, 13);
+}
+.container{
+
+  display: flex;
+margin:0;
+height: 100vh;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.box {
+ 
+  margin: 10px;
+  padding: 10px;
+ height: 300px;
+ width: 500px;
+border: 5px solid black;
+  background-image: url(./assets/11.png);
+  background-size:100%;
+  background-repeat: no-repeat;
+}
+
+
+
+.button{
+  display: block;
+}
+.notwrd{
+  position:relative;
+  top: 50px;
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 1 0 100%; /* On small screens, make the columns take up the full width of the screen */
+  }
+ }

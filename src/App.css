@@ -1,0 +1,88 @@
+
+
+
+
+.app-container{
+  display: grid;
+grid-template-columns:repeat (2, 1fr);
+gap:20px;
+height: 100%
+}
+.sidebar{
+  grid-column: 1/2;
+}
+.sidebar--header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aliceblue;
+}
+.sidebar--body{
+  background-color: rgb(25, 146, 105);
+}
+.card {
+  grid-column:2/3;
+  
+  padding:2rem;
+  box-sizing: border-box;
+  background-image: url(./assets/3.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center center;
+}
+.base{
+  
+
+}
+.base .note {
+ 
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  
+}
+/* Note.css or your CSS file for Note component */
+.base .note1 {
+  
+  
+
+ background-image:url('../assets/3.png');
+  align-items: center; /* Center items horizontally */
+background-size: cover;
+
+  height: 100%;
+  /* Make the div take the full height of its parent (app-container) */
+}
+
+.notesnip1 {
+  max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+.mde{
+display:inline;
+}
+.mde1{
+  display:none;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
